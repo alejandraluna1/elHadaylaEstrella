@@ -1,6 +1,6 @@
 var starImg,bgImg;
 var star, starBody;
-//create variable for fairy sprite and fairyImg
+//crea la variable para el sprite del hada y fairyImg
 
 const Engine = Matter.Engine;
 const World = Matter.World;
@@ -11,15 +11,15 @@ function preload()
 {
 	starImg = loadImage("images/star.png");
 	bgImg = loadImage("images/starNight.png");
-	//load animation for fairy here
+	//carga aquí la animación del hada
 }
 
 function setup() {
 	createCanvas(800, 750);
 
-	//write code to play fairyVoice sound
+	//escribe el código para reproducir el sonido fairyVoice
 
-	//create fairy sprite and add animation for fairy
+	//crea el sprite del hada, y agrega la animación para el hada
 
 
 	star = createSprite(650,30);
@@ -46,7 +46,7 @@ function draw() {
 
   console.log(star.y);
 
-  //write code to stop star in the hand of fairy
+  //escribe aquí el código para detener la estrella en la mano del hada
 
   drawSprites();
 
@@ -58,6 +58,6 @@ function keyPressed() {
 		Matter.Body.setStatic(starBody,false); 
 	}
 
-	//writw code to move fairy left and right
+	//escribe el código para mover al hada a la izquierda y derecha
 	
 }
